@@ -4,19 +4,18 @@ Designed and configured a segmented IoT network in **Cisco Packet Tracer**, impl
 
 ### What I Implemented
 
-* **VLAN Segmentation:** Created separate VLANs to isolate departments, servers, and IoT devices, improving network organisation and reducing unnecessary communication between network segments.
+* **VLAN Segmentation:** Created separate VLANs to isolate departments, servers, and IoT devices, improving network organisation and reducing unnecessary communication .
 * **Inter-VLAN Routing:** Configured router subinterfaces to enable controlled communication between VLANs using 802.1Q trunking.
 * **DHCP:** Configured DHCP pools for different VLANs, providing devices with automatic IP addressing, default gateways, and DNS server information.
 * **Wireless IoT Connectivity:** Connected IoT devices through a Wireless Access Point (WAP) and integrated the wireless IoT network into the wider network infrastructure.
-* **Network Services:** Configured services including DNS, DHCP, HTTP/HTTPS, FTP, and email using a network server.
-* **Extended ACLs:** Implemented an extended access control list named `IOT-SECURITY` to control traffic originating from the IoT VLAN.
+* **Network Services:** Configured services including DNS, NTP, DHCP, HTTP/HTTPS, FTP, and email using a network server.
+* **Extended ACLs:** Implemented an extended access control list named IOT-SECURITY to control traffic originating from the IoT VLAN.
 * **IoT Security Controls:** Used ACL rules to block:
 
   * Telnet (TCP 23) to prevent insecure remote management.
   * HTTP (TCP 80) from IoT devices.
-  * HTTPS (TCP 443) from IoT devices as part of the security simulation.
-  * Communication between the IoT VLAN and Guest VLAN.
-* **ACL Verification:** Used Cisco IOS commands such as `show access-lists`, `show ip interface`, and `show ip interface brief` to verify ACL configuration, placement, and traffic matches.
+  * HTTPS (TCP 443) from IoT devices.
+* **ACL Verification:** Used Cisco IOS commands such as show access-lists, show ip interface, and show ip interface brief to verify ACL configuration, placement, and traffic matches.
 
 ### Security Objective
 
